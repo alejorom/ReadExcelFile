@@ -32,6 +32,7 @@
             this.GrdData = new System.Windows.Forms.DataGridView();
             this.CboHojas = new System.Windows.Forms.ComboBox();
             this.lblRegistros = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GrdData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,17 +71,27 @@
             // lblRegistros
             // 
             this.lblRegistros.AutoSize = true;
-            this.lblRegistros.Location = new System.Drawing.Point(12, 424);
+            this.lblRegistros.Location = new System.Drawing.Point(72, 424);
             this.lblRegistros.Name = "lblRegistros";
             this.lblRegistros.Size = new System.Drawing.Size(70, 13);
             this.lblRegistros.TabIndex = 3;
             this.lblRegistros.Text = "<<registros>>";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(12, 424);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(54, 13);
+            this.lblTotal.TabIndex = 8;
+            this.lblTotal.Text = "Registros:";
             // 
             // ReadExcelFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 446);
+            this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblRegistros);
             this.Controls.Add(this.CboHojas);
             this.Controls.Add(this.GrdData);
@@ -100,6 +111,7 @@
         private System.Windows.Forms.DataGridView GrdData;
         private System.Windows.Forms.ComboBox CboHojas;
         private System.Windows.Forms.Label lblRegistros;
+        private System.Windows.Forms.Label lblTotal;
     }
 }
 

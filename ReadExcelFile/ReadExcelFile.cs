@@ -44,7 +44,7 @@ namespace ReadExcelFile
                         CboHojas.Items.Add(dtHojas.TableName);
                    
                     reader.Close();
-
+                    fs.Close();
                 }
             }
 

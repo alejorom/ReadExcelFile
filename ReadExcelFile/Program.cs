@@ -16,7 +16,7 @@ namespace ReadExcelFile
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ReadExcelFile());
+            Application.Run(new ReadExcel());
         }
     }
 }
